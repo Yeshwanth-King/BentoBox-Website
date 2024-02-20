@@ -1,3 +1,5 @@
 # Stone paper scissors game
 
-This is a mini project mostly based on Javascript.
+This is a mini project mostly based on Javascript. <br> <br>
+
+Link : https://yeshwanth-king.github.io/Stone-Paper-Scissors-Game/
