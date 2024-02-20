@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe game</title>
+    <title>GAME</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="msg-container hide">
-            <p class="msg">WINNER</p>
-            <button class="new-btn">New Game</button>
-
-
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="Images/rock.png" alt="Rock">
         </div>
-        <h1>TIC TAC TOE</h1>
-        <div class="container">
-            <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
+        <div class="choice" id="paper">
+            <img src="Images/paper.png" alt="Paper">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="Images/scissors.png" alt="Scissors">
+        </div>
+    </div>
+        <div class="score-board">
+            <div class="score">
+                <p id="user-score">0</p>
+                <p>Your score</p>
+            </div>
+            <div class="score">
+                <p id="bot-score">0</p>
+                <p>Robot</p>
             </div>
         </div>
-        <button class="reset">Reset Game</button>
-
-    </main>
-    <script src="Script.js"></script>
+        <div class="winner-container">
+             <p class="msg">Pick your move</p>
+        </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
