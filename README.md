@@ -1,5 +1,5 @@
-# Stone paper scissors game
+# Currency Converter
 
 This is a mini project mostly based on Javascript. <br> <br>
 
-Link : https://yeshwanth-king.github.io/Stone-Paper-Scissors-Game/
+Link : https://yeshwanth-king.github.io/Basic-Currency-exchanger/
