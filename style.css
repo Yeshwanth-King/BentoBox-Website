@@ -1,65 +1,71 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 body{
-    text-align: center;
-}
-h1{
-    background-color: #424C55;
-    color: #fff;
-    height: 5rem;
-    line-height: 5rem;
-}
-.choices{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    margin-top: 5rem;
+    min-height: 100vh;
+    background-color: #BFD7EA;
 }
-.choice:hover{
-    cursor: pointer;
-    transform: scale(1.25);
-    background-color: black;
-}
-.choice{
-    height: 165px;
-    width: 165px;
-    transition: all;
-    transition-duration: 0.5s; 
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+.container{
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 2rem;
     border: none;
+    min-height: 50vh;
+    width: 50vh;
 }
-.score-board{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+form {
+    /* margin: 2rem; */
+    margin: 3rem 0 3rem 0;
+}
+form select,input,button {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+form input{
+    border: 2px solid lightgrey;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.drop i{
     font-size: 2rem;
-    gap: 5rem;
+    margin-top: 1rem;
+}
+.drop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 3rem;
 }
-#user-score, #bot-score {
-    font-size: 5rem;
+.select-currency img{
+    max-width: 4rem;
 }
-.winner-container{
-    margin-top: 5rem;
+.select-currency{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    border-radius: 1rem;
+    border: 2px solid lightgrey; 
+    padding: 0.5rem;   
 }
-.msg{
-    background-color: #081b31;
+.select-currency select{
+    font-size: 1rem;
+    width: auto;
+}
+.msg {
+    margin: 2rem 0 2rem 0;
+}
+form button{
+    cursor: pointer;
+    height: 3rem;
+    background-color: #af4d98;
     color: #fff;
-    font-size: 2rem;
-    display: inline;
-    padding: 1rem;
-    border-radius: 30px;
+    font-size: 1.15rem;
 }
