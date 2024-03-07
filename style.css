@@ -1,71 +1,188 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+.offers{
+    /* height: 60px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #BFD7EA;
+    gap: 2rem;
+    font-size: 1.25rem;
+    font-family: Brandon Grotesque;
+    font-weight: 300;
+    background-color: #F15541;
+    color: #fff;
+    padding: 16px 0;
 }
-.container{
-    background-color: #fff;
-    padding: 3rem;
-    border-radius: 2rem;
-    border: none;
-    min-height: 50vh;
-    width: 50vh;
+.offers-claim a{
+    color: #FEC241;
+    text-decoration: none;
+    position: relative;
 }
-form {
-    /* margin: 2rem; */
-    margin: 3rem 0 3rem 0;
-}
-form select,input,button {
+.offers-claim a::after{
+    content: '';
+    position: absolute;
     width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 1rem;
-    background-color: #fff;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #FEC241;
+    left: 0;
+    bottom: 0;
+    transform: scale(0,1);
+    transform-origin: 0 100%;
+    transition: transform 0.5s ease;
 }
-form input{
-    border: 2px solid lightgrey;
-    font-size: 1rem;
-    padding: 1rem;
+.underline:hover::after{
+    transform: scale(1,1);
 }
-.drop i{
-    font-size: 2rem;
-    margin-top: 1rem;
+.nav-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    height: 100px;
+    /* margin: 0 2rem; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #FFF7EC;
 }
-.drop{
+.scorlling{
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.12);
+}
+.nav-options{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
+    gap: 2rem;
 }
-.select-currency img{
-    max-width: 4rem;
+.nav-options a{
+    color: #30323B;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    position: relative;
 }
-.select-currency{
+.line::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #FEC241;
+    left: 0;
+    bottom: -10px;
+    transform: scale(0,1);
+    transform-origin: 0 100%;
+    transition: transform 0.5s ease;
+}
+.line:hover::after{
+    transform: scale(1,1);
+}
+.logo img{
+    height: 2rem;
+}
+
+.nav-contact{
     display: flex;
+    font-size: 1rem;
+    color: #30323B;
+    font-weight: 400;
+    gap: 1rem;
+    padding: 0.5rem 0;
     justify-content: center;
     align-items: center;
-    width: 8rem;
-    border-radius: 1rem;
-    border: 2px solid lightgrey; 
-    padding: 0.5rem;   
+    
+
 }
-.select-currency select{
-    font-size: 1rem;
-    width: auto;
-}
-.msg {
-    margin: 2rem 0 2rem 0;
-}
-form button{
+.nav-contact p {
     cursor: pointer;
-    height: 3rem;
-    background-color: #af4d98;
-    color: #fff;
-    font-size: 1.15rem;
+    position: relative;
+}
+.sign-in a{
+    color: #30323B;
+    text-decoration: none;
+    position: relative;
+}
+.line1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #30323B;
+    left: 0;
+    bottom: 0px;
+    transform: scale(0,1);
+    transform-origin: 0 100%;
+    transition: transform 0.5s ease;
+}
+.line1:hover::after{
+    transform: scale(1,1);
+}
+
+.getStarted{
+    background-color: #19A4AD;
+    color: #FFFFFF;
+    padding: 1rem 1.25rem;
+    border-radius: 10rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.hero{
+    background-color: #FFF7EC;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0;
+    height: 100vh;
+}
+
+.hero-info h1{
+    color: #F15541;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    
+}
+.hero-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start ;
+    align-items: center;
+    font-weight: 300;
+    /* padding-right: 8rem; */
+    /* gap: 2rem; */
+    
+}
+.i{
+    height: 100%;
+    width: 50%;
+    background-image: url(scooter2.5m\ \(1\).gif);
+    background-size: cover;
+}
+
+.hero2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+.hero2 p{
+    color: #696970;
+    font-size: 1.25rem;
+    line-height: 1.40;
+    font-weight: 400;
 }
